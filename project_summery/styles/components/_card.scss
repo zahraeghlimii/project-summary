@@ -1,0 +1,206 @@
+:root {
+  --color: #ea7f7f;
+}
+.card_content {
+  width: 736px;
+  height: 512px;
+  border-radius: 25px;
+  overflow: hidden;
+  display: grid;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.05);
+
+  grid-template-columns: repeat(2, 1fr);
+}
+.card_result {
+  background: linear-gradient(to bottom, #7e77df, #212bb8);
+  border-radius: 30px;
+  color: #e0d2d2;
+  @extend .flex;
+  text-align: center;
+  h1 {
+    font-size: 26px;
+  }
+  .box-of {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    @extend .flex;
+    justify-content: center;
+
+    background: linear-gradient(to bottom, #2f39c3, #625bc9);
+    span {
+      display: block;
+      font-size: 70px;
+      font-weight: 900;
+      color: #fff;
+    }
+    p {
+      text-align: center;
+    }
+  }
+  h2 {
+    font-size: 30px;
+    color: #fff;
+  }
+  p {
+    width: 220px;
+    line-height: 1.5;
+    text-align: center;
+  }
+}
+.card_summery {
+  @extend .flex;
+  .box-items {
+    display: grid;
+    align-content: start;
+    gap: 18px;
+    .item_content {
+      display: flex;
+      border-radius: 10px;
+      align-items: center;
+      padding: 16px;
+      width: 270px;
+      justify-content: space-between;
+      .item-img {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        h3 {
+          font-size: 17px;
+        }
+      }
+      .item-num {
+        font-weight: bold;
+        p {
+          color: rgb(147, 147, 147);
+          span {
+            font-size: 18px;
+            color: #303b5a;
+          }
+        }
+      }
+    }
+    .item-1 {
+      border-radius: 8px;
+      background-color: #ffeeee;
+      .item-img {
+        color: #ff5757;
+        svg {
+          stroke: #ff5757;
+        }
+      }
+    }
+    .item-2 {
+      border-radius: 8px;
+      background-color: #fcf4e4;
+      .item-img {
+        color: #ffb01f;
+        svg {
+          stroke: #ffb01f;
+        }
+      }
+    }
+    .item-3 {
+      border-radius: 8px;
+      background-color: #ecf9f6;
+      .item-img {
+        color: #00bd91;
+        svg {
+          stroke: #00bd91;
+        }
+      }
+    }
+    .item-4 {
+      border-radius: 8px;
+      background-color: #dddff4;
+      .item-img {
+        color: #1125d4;
+        svg {
+          stroke: #1125d4;
+        }
+      }
+    }
+  }
+  button {
+    all: unset;
+    color: #ffffff;
+    line-height: 1;
+    background: #303b5a;
+    padding: 16px 34px;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 230px;
+    font-size: 18px;
+    text-align: center;
+  }
+  button:hover,
+  button:focus-visible {
+    background: linear-gradient(#7857ff, #2e2be9);
+  }
+}
+@media (min-width: 610px) and (max-width: 800px) {
+  .card_content {
+    transform: scale(0.75);
+  }
+}
+@media (max-width: 610px) {
+  body{
+    overflow-x: hidden;
+  }
+  .conteiner {
+    padding: 0;
+  }
+
+  .card_content {
+    width: 100vw;
+    height: auto;
+    border-radius: 0 0 25px 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .card_result {
+    width: auto;
+    padding: 100px 30px 70px;
+    border-radius: 0 0 50px 50px;
+  }
+
+  .box-of {
+    margin: 20px auto;
+    transform: scale(0.85);
+  }
+
+  h2,
+  p {
+    transform: scale(0.95);
+  }
+
+  h2 {
+    margin-bottom: 15px;
+  }
+
+  p {
+    max-width: 270px;
+    margin: 0 auto;
+  }
+
+  .card_summery {
+    width: auto;
+    button {
+      margin-top: 20px;
+    }
+  }
+}
+@media (max-width: 475px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  .card_summery {
+    // padding: 20px 10px;
+    button {
+      margin-top: 20px;
+    }
+  }
+}
