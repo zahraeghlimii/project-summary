@@ -1,6 +1,3 @@
-:root {
-  --color: #ea7f7f;
-}
 .card_content {
   width: 736px;
   height: 512px;
@@ -83,41 +80,41 @@
     }
     .item-1 {
       border-radius: 8px;
-      background-color: #ffeeee;
+      background-color: $bgcolor-item1;
       .item-img {
-        color: #ff5757;
+        color: $color-item-1;
         svg {
-          stroke: #ff5757;
+          stroke: $color-item-1;
         }
       }
     }
     .item-2 {
       border-radius: 8px;
-      background-color: #fcf4e4;
+      background-color: $bgcolor-item2;
       .item-img {
-        color: #ffb01f;
+        color: $color-item-2;
         svg {
-          stroke: #ffb01f;
+          stroke: $color-item-2;
         }
       }
     }
     .item-3 {
       border-radius: 8px;
-      background-color: #ecf9f6;
+      background-color: $bgcolor-item3;
       .item-img {
-        color: #00bd91;
+        color: $color-item-3;
         svg {
-          stroke: #00bd91;
+          stroke: $color-item-3;
         }
       }
     }
     .item-4 {
       border-radius: 8px;
-      background-color: #dddff4;
+      background-color: $bgcolor-item4;
       .item-img {
-        color: #1125d4;
+        color: $color-item-4;
         svg {
-          stroke: #1125d4;
+          stroke: $color-item-4;
         }
       }
     }
@@ -145,7 +142,7 @@
   }
 }
 @media (max-width: 610px) {
-  body{
+  body {
     overflow-x: hidden;
   }
   .conteiner {

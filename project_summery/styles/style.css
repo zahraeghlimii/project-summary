@@ -34,10 +34,6 @@ body {
           flex-direction: column;
 }
 
-:root {
-  --color: #ea7f7f;
-}
-
 .card_content {
   width: 736px;
   height: 512px;
